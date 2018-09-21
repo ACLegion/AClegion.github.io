@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 月赛题解 | ACLegion</title>
+  <title>AC军团周报||第三周 第三篇-线段树从入门到入土【3】 | ACLegion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ACLegion">
-<meta property="og:url" content="http://yoursite.com/tags/月赛题解/index.html">
+  <meta name="description" content="【AC军团周报（第三周）第三篇】线段树从入门到入土【3】作者：yizimi远欣摘要： 这期我们就万能的线段树，讲一讲线段树的奇葩用法。 你可能不知道这些线段树用法：线段树维护区间最大子段和、线段树优化Dijkstra（大雾）…… 文章地址：https://yizimiyuanxin.blog.luogu.org/ac-jun-tuan-zhou-bao-di-san-zhou-di-san-pia">
+<meta name="keywords" content="AC军团周报">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AC军团周报||第三周 第三篇-线段树从入门到入土【3】">
+<meta property="og:url" content="http://yoursite.com/2018/09/21/AC军团周报第三周-（3）/index.html">
 <meta property="og:site_name" content="ACLegion">
+<meta property="og:description" content="【AC军团周报（第三周）第三篇】线段树从入门到入土【3】作者：yizimi远欣摘要： 这期我们就万能的线段树，讲一讲线段树的奇葩用法。 你可能不知道这些线段树用法：线段树维护区间最大子段和、线段树优化Dijkstra（大雾）…… 文章地址：https://yizimiyuanxin.blog.luogu.org/ac-jun-tuan-zhou-bao-di-san-zhou-di-san-pia">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-21T13:56:29.419Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ACLegion">
+<meta name="twitter:title" content="AC军团周报||第三周 第三篇-线段树从入门到入土【3】">
+<meta name="twitter:description" content="【AC军团周报（第三周）第三篇】线段树从入门到入土【3】作者：yizimi远欣摘要： 这期我们就万能的线段树，讲一讲线段树的奇葩用法。 你可能不知道这些线段树用法：线段树维护区间最大子段和、线段树优化Dijkstra（大雾）…… 文章地址：https://yizimiyuanxin.blog.luogu.org/ac-jun-tuan-zhou-bao-di-san-zhou-di-san-pia">
   
     <link rel="alternative" href="/atom.xml" title="ACLegion" type="application/atom+xml">
   
@@ -142,60 +147,178 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-AC军团周报第三周-（3）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/18/AC军团八月月赛题解/" class="archive-article-date">
-  	<time datetime="2018-08-18T13:45:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-18</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/18/AC军团八月月赛题解/">AC军团八月月赛题解</a>
+    <h1 class="article-title" itemprop="name">
+      AC军团周报||第三周 第三篇-线段树从入门到入土【3】
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/09/21/AC军团周报第三周-（3）/" class="archive-article-date">
+  	<time datetime="2018-09-21T09:24:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="【AC军团周报（第三周）第三篇】线段树从入门到入土【3】"><a href="#【AC军团周报（第三周）第三篇】线段树从入门到入土【3】" class="headerlink" title="【AC军团周报（第三周）第三篇】线段树从入门到入土【3】"></a>【AC军团周报（第三周）第三篇】线段树从入门到入土【3】</h4><p><strong>作者：yizimi远欣</strong><br>摘要：</p>
+<p>这期我们就万能的线段树，讲一讲线段树的奇葩用法。 你可能不知道这些线段树用法：线段树维护区间最大子段和、线段树优化Dijkstra（大雾）……</p>
+<p>文章地址：<a href="https://yizimiyuanxin.blog.luogu.org/ac-jun-tuan-zhou-bao-di-san-zhou-di-san-pian-xian-duan-shu-zong-ru-post" target="_blank" rel="noopener">https://yizimiyuanxin.blog.luogu.org/ac-jun-tuan-zhou-bao-di-san-zhou-di-san-pian-xian-duan-shu-zong-ru-post</a></p>
+<p><strong>此文章将会在洛谷团队AC军团讨论区和AC军团官网发布，文章版权归原作者。（如要转载请联系原作者）</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">月赛题解</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">AC军团周报</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/09/21/AC军团周报第三周-（3）/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/08/30/AC军团周报第三周- (2)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">AC军团周报||第三周 第二篇-数论初步（1）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#【AC军团周报（第三周）第三篇】线段树从入门到入土【3】"><span class="toc-number">1.</span> <span class="toc-text">【AC军团周报（第三周）第三篇】线段树从入门到入土【3】</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "AC军团周报||第三周 第三篇-线段树从入门到入土【3】",
+  owner: 'ACLegion',
+  repo: 'pinglun',
+  oauth: {
+    client_id: '313bc6ca45b1ae4d34be',
+    client_secret: '2df0ba080e18b9658c419463d264e7b2f4eca083',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -218,9 +341,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: false,
